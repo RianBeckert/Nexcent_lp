@@ -1,0 +1,43 @@
+@import '@/styles/variables.scss';
+@import '@/styles/mixins.scss';
+
+.testimonials {
+    @include max-width;
+    background-color: $white;
+    height: 35rem;
+    margin-top: 15rem;
+    display: flex;
+    align-items: center;
+    gap: 7.8rem;
+
+    span {
+        color: $green;
+        font-size: 2rem;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.6rem;
+        align-self: stretch;  
+        margin-top: 4rem;      
+    }
+
+    .secp {
+        @include device(notebook) {
+            display: none;
+       }
+    }
+
+    .img {
+       display: flex;
+       align-items: center;
+       gap: 3.2rem;
+       align-self: stretch; 
+
+       @include device(notebook) {
+            display: none;
+       }
+    }
+}

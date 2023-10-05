@@ -1,0 +1,78 @@
+@import '@/styles/variables.scss';
+@import '@/styles/mixins.scss';
+
+.header {
+  @include max-width;
+  background-color: $white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 60rem;
+  align-self: stretch;
+  padding: 14.4rem;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    h1 {
+      font-size: 6.4rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 7.6rem;
+      margin-right: 14.4rem;
+    }
+
+    span {
+      margin-bottom: 1.6rem;
+      color: $green;
+      font-size: 6.4rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 7.6rem;
+      display: block;
+      margin-right: 14.4rem;
+    }
+
+    p {
+      font-size: 1.6rem;
+      margin-top: 1.6rem;
+      margin-right: 14.4rem;
+    }
+
+    .button {
+      margin-top: 1rem;
+      text-align: center;
+      font-size: 1.6rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 2.4rem;
+
+      .register {
+        border: 0;
+        padding: 1.4rem 3.2rem;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        border-radius: 0.4rem;
+        background-color: $green;
+        margin-top: 1.6rem;
+        color: $white;
+
+        &:hover {
+            background-color: lighten($green, 10%); 
+            color: $white; 
+        }
+        
+    }
+    }
+  }
+
+  .image {
+    flex-shrink: 0;
+    margin-right: 10rem
+  }
+}
