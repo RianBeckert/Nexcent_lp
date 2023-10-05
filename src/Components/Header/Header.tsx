@@ -17,5 +17,6 @@ export function Header(){
         <div className={styles.image}>
           <Image src="/ilustration.png" alt="ilustration" width={391} height={407} />
         </div>
-      </header> )
+      </header> 
+    )
 }
